@@ -11,12 +11,11 @@
     },
     "platform": {
         "uuid": "platform_customization_local",
-        "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
-        "autoShow": false,
+        "autoShow": true,
         "providerUrl": "http://localhost:5555/provider.html",
         "permissions": {
             "ExternalWindow": {
-              	"wrap": true
+                "wrap": true
             },
             "System": {
                 "getAllExternalWindows": true,
@@ -26,68 +25,14 @@
             }
         },
         "defaultWindowOptions": {
-            "url": "http://localhost:5555/platform-window.html",
-            "contextMenuSettings": {
-                "reload": false,
-                "devtools": false,
-                "enable": false
-            },
-            "defaultWidth": 900,
-            "defaultHeight": 720,
+            "defaultWidth": 400,
+            "defaultHeight": 400,
             "defaultLeft": 0,
             "defaultTop": 0,
             "saveWindowState": false,
             "backgroundThrottling": true,
-            "minHeight": 445,
-            "minWidth": 354,
-            "experimental": {
-                "analytics": true
-            }
-        },
-        "defaultViewOptions": {
-            "experimental": {
-                "childWindows": true,
-                "analytics": true
-            }
-        },
-        "commands": [
-            {
-                "command": "stack.nextTab",
-                "keys": "Ctrl+Tab"
-            }
-        ]
-    },
-    "snapshot": {
-        "windows": [
-            {
-                "name": "Seed Window",
-                "layout": {
-                    "content": [
-                        {
-                            "type": "stack",
-                            "id": "no-drop-target",
-                            "content": [
-                                {
-                                    "type": "component",
-                                    "componentName": "view",
-                                    "componentState": {
-                                        "processAffinity": "ps_1",
-                                        "url": "https://cdn.openfin.co/health/deployment/index.html"
-                                    }
-                                },
-                                {
-                                    "type": "component",
-                                    "componentName": "view",
-                                    "componentState": {
-                                        "processAffinity": "ps_1",
-                                        "url": "https://google.com"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
+            "minHeight": 400,
+            "minWidth": 400
+        }
     }
 }
